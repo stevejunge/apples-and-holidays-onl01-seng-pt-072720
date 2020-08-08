@@ -61,7 +61,14 @@ def all_holidays_with_bbq(holiday_hash)
   end.flatten.compact
 end
 
+require 'pry'
 def all_supplies_in_holidays(holidays)
+  holiday_hash.each do |season, holidays|
+    holidays.each do |holidays, supplies|
+      binding.pry
+      supplies
+    end
+  end
 end
 
 
