@@ -64,7 +64,7 @@ end
 require 'pry'
 def all_supplies_in_holidays(holidays)
   holiday_hash.each do |season, holidays|
-    holidays.each do |holidays, supplies|
+    holidays.each do |holiday, supplies|
       binding.pry
       supplies
     end
